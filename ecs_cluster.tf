@@ -1,0 +1,14 @@
+# Create ECS Cluster
+resource "aws_ecs_cluster" "app_cluster" {
+  name = "${var.project_name}-${var.environment}-cluster"
+
+  setting {
+    name  = "containerInsights"
+    value = "enabled"
+  }
+
+  tags = {
+    Name = "${var.project_name}-${var.environment}-cluster"
+    Environment = var.environment
+  }
+}
