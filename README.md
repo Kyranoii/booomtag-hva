@@ -13,7 +13,7 @@ Welcome to booomtags test/work enviorment in this document we will go over the d
 
 2. Initialize Terraform:  `terraform init`
 
-3. Set DB user and Password if not done yet: 
+3. Set DB user and Password if not done yet, this can be any credentials you want: 
  ```
   export TF_VAR_db_username="dev"   
   export TF_VAR_db_password="supersecret"
